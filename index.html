@@ -128,7 +128,7 @@
 
       @media screen and (max-width: 1000px) {
         .container {
-          padding: 10px 150px;
+          padding: 10px 20px;
         }
 
         .left-section,
@@ -145,6 +145,9 @@
       }
 
       @media screen and (max-width: 680px) {
+        .container {
+          padding: 10px 20px;
+        }
         .propose h3 {
           font-style: italic;
           font-size: 30px;
@@ -177,17 +180,26 @@
       }
 
       @media screen and (max-width: 400px) {
+        .container {
+          padding: 10px 0px;
+        }
+
+        .imgs-section img {
+          width: 175px;
+        }
         .imgs-section {
-          margin: 0px 10px;
+          width: 200px;
+          height: 200px;
         }
 
         .propose h3 {
           font-style: italic;
-          font-size: 25px;
+          font-size: 18px;
           font-weight: 500;
-          line-height: 30px;
+          line-height: 27px;
+          margin: 20px;
           background-color: aquamarine;
-          padding: 5px 10px;
+          padding: 5px 5px;
           border-radius: 50px;
         }
 
@@ -205,6 +217,16 @@
         }
         .heart:nth-child(5) {
           display: none;
+        }
+        .created h4 {
+          line-height: 19px;
+          font-weight: 300;
+          font-size: 17px;
+          color: red;
+          text-align: center;
+          padding: 17px;
+          background-color: #fff;
+          border-radius: 50px;
         }
       }
     </style>
@@ -232,7 +254,7 @@
 
       <div class="right-section">
         <div class="imgs-section">
-          <img src="/imgs/imgs.png" alt="" />
+          <img src="imgs.png" alt="" />
         </div>
         <div>
           <div class="heart" style="width: 30px"></div>
