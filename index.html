@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Propose Day</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        background-color: #f5bce4;
+        padding: 10px 0;
+        height: 100%;
+      }
+
+      .left-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .heart {
+        width: 175px;
+        background: radial-gradient(circle at 60% 65%, red 64%, transparent 65%)
+            top left,
+          radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
+          linear-gradient(to bottom left, red 43%, transparent 43%) bottom left,
+          linear-gradient(to bottom right, red 43%, transparent 43%) bottom
+            right;
+
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        animation: pulse 2s infinite alternate;
+      }
+
+      .heart::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+
+      .heart:nth-child(2) {
+        width: 150px;
+      }
+
+      .heart:nth-child(3) {
+        width: 100px;
+      }
+
+      .heart:nth-child(4) {
+        width: 60px;
+      }
+
+      .heart:nth-child(5) {
+        width: 30px;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+
+      .propose h3 {
+        font-style: italic;
+        font-size: 41px;
+        font-weight: 500;
+        line-height: 60px;
+        background-color: aquamarine;
+        padding: 5px 10px;
+        border-radius: 50px;
+      }
+
+      .propose h3 span:first-child {
+        color: green;
+      }
+
+      .propose h3 span:nth-child(2) {
+        color: red;
+      }
+
+      .propose h3 span:last-child {
+        color: palevioletred;
+      }
+
+      .right-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .imgs-section {
+        background-color: yellow;
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        text-align: center;
+      }
+
+      .imgs-section img {
+        width: 300px;
+      }
+
+      .created {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .created h4 {
+        line-height: 25px;
+        font-weight: 300;
+        font-size: 23px;
+        color: red;
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 50px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .container {
+          padding: 10px 150px;
+        }
+
+        .left-section,
+        .right-section {
+          display: contents;
+          text-align: center;
+        }
+        .imgs-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 100px;
+        }
+      }
+
+      @media screen and (max-width: 680px) {
+        .propose h3 {
+          font-style: italic;
+          font-size: 30px;
+          font-weight: 500;
+          line-height: 40px;
+          background-color: aquamarine;
+          padding: 5px 10px;
+          border-radius: 50px;
+        }
+
+        .imgs-section {
+          margin: 0px 60px;
+        }
+
+        .heart:nth-child(1) {
+          width: 150px;
+        }
+        .heart:nth-child(2) {
+          width: 100px;
+        }
+        .heart:nth-child(3) {
+          width: 50px;
+        }
+        .heart:nth-child(4) {
+          width: 25px;
+        }
+        .heart:nth-child(5) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .imgs-section {
+          margin: 0px 10px;
+        }
+
+        .propose h3 {
+          font-style: italic;
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 30px;
+          background-color: aquamarine;
+          padding: 5px 10px;
+          border-radius: 50px;
+        }
+
+        .heart:nth-child(1) {
+          width: 100px;
+        }
+        .heart:nth-child(2) {
+          width: 50px;
+        }
+        .heart:nth-child(3) {
+          width: 30px;
+        }
+        .heart:nth-child(4) {
+          display: none;
+        }
+        .heart:nth-child(5) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        </div>
+        <div class="propose">
+          <h3>
+            🌹
+            <span class="first">Happy</span>
+            <span class="second"> Propose</span>
+            <span class="third">Day</span>
+            🌹
+          </h3>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="imgs-section">
+          <img src="/imgs/imgs.png" alt="" />
+        </div>
+        <div>
+          <div class="heart" style="width: 30px"></div>
+          <div class="heart" style="width: 60px"></div>
+          <div class="heart" style="width: 100px"></div>
+          <div class="heart" style="width: 150px"></div>
+          <div class="heart" style="width: 175px"></div>
+        </div>
+      </div>
+      <div class="created">
+        <h4>Made by ❤️ Anand</h4>
+      </div>
+    </div>
+  </body>
+</html>
